@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="trivago">
+
+<!--	-->
+<!--	&lt;!&ndash; some parameter &ndash;&gt;-->
+<!--	<parameter name="name" value="value"></parameter>-->
+<!--	&lt;!&ndash; some parameter &ndash;&gt;-->
+<!--	<parameter name="name" value="value"></parameter>-->
+
+	<test name="data privacy">
+		<groups>
+			<run>
+				<include name="workshop"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.DataPrivacyTest"></class>
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,7 @@
+{
+	"deviceName": "emulator-5554",
+	"platformName": "Android",
+	"app": "/Users/sergiogarciaperez/Documents/CURSOS/BOOTCAMP-AUTOMATION/mobile/apks/trivago.apk",
+	"appPackage": "com.trivago",
+	"appActivity": "com.trivago.ft.main.frontend.MainActivity"
+}
