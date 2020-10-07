@@ -16,7 +16,7 @@
 		</groups>
 		<classes>
 <!--			<class name="tests.DataPrivacyTest"></class>-->
-			<class name="tests.searchHotelsTest"></class>
+			<class name="tests.DataPrivacyConfigurationTest"></class>
 		</classes>
 	</test>
 </suite> 
