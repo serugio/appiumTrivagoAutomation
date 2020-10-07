@@ -59,9 +59,20 @@ public abstract class BaseScreen {
 	 * Click on button.
 	 *
 	 */
-	public void tabOnButton(AndroidElement element) {
+	public void tabOnElement(AndroidElement element) {
 		Logger.info("Alert Message: " + element.getText());
 		element.click();
 	}
+
+	public void typeInInputText(AndroidElement element, String textToType){
+		Logger.info("Alert Message: attempt to type " + textToType);
+		element.sendKeys(textToType);
+	}
+
+	public boolean elementContainsText(AndroidElement element, String textToContain){
+		return element.getText().contains(textToContain);
+	}
+
+
 
 }

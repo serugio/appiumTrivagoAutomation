@@ -15,7 +15,8 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="tests.DataPrivacyTest"></class>
+<!--			<class name="tests.DataPrivacyTest"></class>-->
+			<class name="tests.searchHotelsTest"></class>
 		</classes>
 	</test>
 </suite> 

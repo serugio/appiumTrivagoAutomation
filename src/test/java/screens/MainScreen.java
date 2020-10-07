@@ -22,41 +22,27 @@ public class MainScreen extends BaseScreen {
 	}
 
 	// Locators
-	private static final String COLOMBIA_LOCATOR = "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
-			+ ".scrollIntoView(new UiSelector().textContains(\"Colombia\").instance(0))";
+	private static final String SEARCH_DESTINY_INPUT = "com.trivago:id/fragmentHomeExpandedDealformDestinationTextView";
 	private static final String CONFIRM_BUTTON_LOCATOR = "com.trivago:id/activityPlatformSelectionConfirmButton";
 
 	// AndroidElements
-	@AndroidFindBy(uiAutomator = COLOMBIA_LOCATOR)
-	private AndroidElement colombiaListItem;
+	@AndroidFindBy(id = SEARCH_DESTINY_INPUT)
+	private AndroidElement searchDestinyInput;
 
 	@AndroidFindBy(id = CONFIRM_BUTTON_LOCATOR)
 	private AndroidElement confirmButton;
 
-	public void tabOnColombiaListItem(){
-		tabOnButton(colombiaListItem);
-	}
-
 	public DataPrivacyScreen tabOnConfirmButton(){
-		tabOnButton(confirmButton);
-		return new DataPrivacyScreen(driver);
-
-	}
-
-	/**
-	 * Returns a SecondScreen after to do something.
-	 * 
-	 * 
-	 * @return SecondScreen
-	 */
-	public DataPrivacyScreen returnSecondScreen() {
-		// code
+		tabOnElement(confirmButton);
 		return new DataPrivacyScreen(driver);
 	}
 
+	public SearchDestinationScreen tabInSearchDestinyInput(){
+		tabOnElement(searchDestinyInput);
+		return new SearchDestinationScreen(driver);
 
-
-	public void someInstructions() {
-		// code.
 	}
+
+
+
 }

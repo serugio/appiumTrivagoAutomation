@@ -34,29 +34,23 @@ public class WelcomeScreen extends BaseScreen {
 	private AndroidElement confirmButton;
 
 	public void tabOnColombiaListItem(){
-		tabOnButton(colombiaListItem);
+		tabOnElement(colombiaListItem);
 	}
 
 	public DataPrivacyScreen tabOnConfirmButton(){
-		tabOnButton(confirmButton);
+		tabOnElement(confirmButton);
 		return new DataPrivacyScreen(driver);
 
 	}
 
 	/**
-	 * Returns a SecondScreen after to do something.
+	 * Returns a DataPrivacyScreen after to do something.
 	 * 
 	 * 
-	 * @return SecondScreen
+	 * @return DataPrivacyScreen
 	 */
 	public DataPrivacyScreen returnSecondScreen() {
 		// code
 		return new DataPrivacyScreen(driver);
-	}
-
-
-
-	public void someInstructions() {
-		// code.
 	}
 }

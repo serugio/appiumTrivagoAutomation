@@ -10,6 +10,7 @@ import java.net.URL;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import screens.MainScreen;
 import screens.WelcomeScreen;
 import util.ConfigCapabilities;
 
@@ -58,6 +59,9 @@ public abstract class BaseMobileTest {
 	 */
 	protected WelcomeScreen returnWelcomeScreen() {
 		return new WelcomeScreen(driver);
+	}
+	protected MainScreen returnMainScreen() {
+		return new MainScreen(driver);
 	}
 
 }

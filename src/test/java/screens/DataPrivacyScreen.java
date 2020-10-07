@@ -34,16 +34,10 @@ public class DataPrivacyScreen extends BaseScreen {
 	@AndroidFindBy(id = "com.trivago:id/activityCookieConsentContentAcceptButton")
 	protected AndroidElement acceptAllButton;
 
-
-	
-	public void flowInsideSecondScreen() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	public boolean titleExists(){
 		return title.isDisplayed();
 	}
+
 
 	public boolean firstParagraphExists(){
 		return firstParagraph.isDisplayed();
@@ -58,7 +52,7 @@ public class DataPrivacyScreen extends BaseScreen {
 	}
 
 	public MainScreen tabOnAcceptAllButton(){
-		tabOnButton(acceptAllButton);
+		tabOnElement(acceptAllButton);
 		return new MainScreen(driver);
 	}
 
