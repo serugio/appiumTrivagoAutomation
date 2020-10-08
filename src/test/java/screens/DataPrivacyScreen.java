@@ -23,7 +23,7 @@ public class DataPrivacyScreen extends BaseScreen {
 	}
 
 	// AndroidElements
-	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Privacidad de datos\")")
+	@AndroidFindBy(id = "com.trivago:id/activityCookieConsentContentTitleTextView")
 	protected AndroidElement title;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Creemos que mereces la mejor experiencia posible cuando usas trivago.\")")
 	protected AndroidElement firstParagraph;
@@ -34,10 +34,7 @@ public class DataPrivacyScreen extends BaseScreen {
 	@AndroidFindBy(id = "com.trivago:id/activityCookieConsentContentAcceptButton")
 	protected AndroidElement acceptAllButton;
 
-	public boolean titleExists(){
-		return title.isDisplayed();
-	}
-
+	public boolean titleExists(){ return title.isDisplayed(); }
 
 	public boolean firstParagraphExists(){
 		return firstParagraph.isDisplayed();

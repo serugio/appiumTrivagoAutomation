@@ -29,7 +29,6 @@ public class DataPrivacyTest extends BaseMobileTest {
 		Assert.assertTrue(dataPrivacyScreen.thirdParagraphExists());
 
 		MainScreen mainScreen = dataPrivacyScreen.tabOnAcceptAllButton();
-		Assert.assertFalse(dataPrivacyScreen.titleExists());
 
 	}
 
