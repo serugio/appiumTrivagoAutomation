@@ -2,11 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="trivago">
 
-<!--	-->
-<!--	&lt;!&ndash; some parameter &ndash;&gt;-->
-<!--	<parameter name="name" value="value"></parameter>-->
-<!--	&lt;!&ndash; some parameter &ndash;&gt;-->
-<!--	<parameter name="name" value="value"></parameter>-->
 
 	<test name="data privacy">
 		<groups>
@@ -15,8 +10,10 @@
 			</run>
 		</groups>
 		<classes>
-<!--			<class name="tests.DataPrivacyTest"></class>-->
-			<class name="tests.DataPrivacyConfigurationTest"></class>
+			<class name="tests.DataPrivacyTest"></class>
+<!--			<class name="tests.searchHotelsTest"></class>-->
+<!--			<class name="tests.NavigationBarElementsTest"></class>-->
+<!--			<class name="tests.DataPrivacyConfigurationTest"></class>-->
 		</classes>
 	</test>
 </suite> 
